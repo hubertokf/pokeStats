@@ -65,7 +65,7 @@ export default {
     fetchTrainers: function() {
       const self = this;
       axios
-        .get("http://localhost:3000/api/trainers")
+        .get("http://31.220.56.243:3000/api/trainers")
         .then(function(response) {
           self.Trainers = response.data;
           self.Trainers.forEach((trainer, index) => {

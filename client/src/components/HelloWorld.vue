@@ -2,16 +2,11 @@
     <section class="section">
         <div class="container">
             <h1 class="title">
-                Hello World
+                Estatísticas Pokemappel
             </h1>
             <p class="subtitle">
-                My first website with
-                <strong>Bulma</strong>!
-                <div class="checkbox">
-                    <label>
-                        {{ msg }}
-                    </label>
-                </div>
+                <strong>Atenção</strong>!
+                Os dados mostrados aqui são apenas uma estimativa.
             </p>
         </div>
     </section>

@@ -12,6 +12,7 @@ module.exports = {
     assetsRoot: path.resolve(__dirname, '../dist'),
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
+    api_url: 'http://31.220.56.243:3000/api/',
     productionSourceMap: true,
     // Gzip off by default as many popular static hosts such as
     // Surge or Netlify already gzip all static assets for you.
@@ -27,6 +28,7 @@ module.exports = {
   },
   dev: {
     env: require('./dev.env'),
+    api_url: 'http://localhost:3000/api/',
     port: process.env.PORT || 8080,
     autoOpenBrowser: true,
     assetsSubDirectory: 'static',

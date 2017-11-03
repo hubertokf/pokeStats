@@ -5,6 +5,7 @@ const config = require('../config')
 if (!process.env.NODE_ENV) {
   process.env.NODE_ENV = JSON.parse(config.dev.env.NODE_ENV)
 }
+process.env.api_url = "http://localhost:3000/api/"
 
 const opn = require('opn')
 const path = require('path')

@@ -2,6 +2,7 @@
 require('./check-versions')()
 
 process.env.NODE_ENV = 'production'
+process.env.api_url = 'http://31.220.56.243:3000/api/'
 
 const ora = require('ora')
 const rm = require('rimraf')

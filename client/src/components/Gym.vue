@@ -30,7 +30,7 @@ export default {
   methods: {
     fetchGyms: function() {
         const self = this;
-        axios.get("http://localhost:3000/api/gymdetails")
+        axios.get("http://31.220.56.243:3000/api/gymdetails")
         .then(function(response) {
             self.gyms = response.data;
         })

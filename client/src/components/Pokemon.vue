@@ -84,7 +84,7 @@ export default {
     fetchPokemons: function() {
       const self = this;
       axios
-        .get("http://localhost:3000/api/gympokemons")
+        .get("http://31.220.56.243:3000/api/gympokemons")
         .then(function(response) {
           self.Pokemons = response.data;
           self.Pokemons.forEach((pokemon, index) => {

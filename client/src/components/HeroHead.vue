@@ -3,19 +3,19 @@
         <div class="hero-head">
             <nav class="level">
                 <p class="level-item has-text-centered">
-                    <a class="link is-info">Home</a>
+                    <a class="link is-info"></a>
                 </p>
                 <p class="level-item has-text-centered">
-                    <a class="link is-info">Menu</a>
+                    <a class="link is-info"></a>
                 </p>
                 <p class="level-item has-text-centered">
-                    <img src="https://bulma.io/images/bulma-type.png" alt="" style="height: 30px;">
+                    <img src="../assets/unnamed.png" alt="">
                 </p>
                 <p class="level-item has-text-centered">
-                    <a class="link is-info">Reservations</a>
+                    <a class="link is-info"></a>
                 </p>
                 <p class="level-item has-text-centered">
-                    <a class="link is-info">Contact</a>
+                    <a class="link is-info"></a>
                 </p>
             </nav>
         </div>
@@ -76,9 +76,9 @@
                         <li :class="{ 'is-active': $route.name === 'Pokemon'}">
                             <router-link to="Pokemon">Top Pokémons</router-link>
                         </li>
-                        <li :class="{ 'is-active': $route.name === 'Gym'}">
+                        <!-- <li :class="{ 'is-active': $route.name === 'Gym'}">
                             <router-link to="Gym">Líderes de Ginásio</router-link>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
             </nav>
@@ -106,7 +106,7 @@ export default {
     fetchCount: function() {
       const self = this;
       axios
-        .get("http://localhost:3000/api/trainers/count")
+        .get("http://31.220.56.243:3000/api/trainers/count")
         .then(function(response) {
             self.mysticCount = response.data[0].count
             self.valorCount = response.data[1].count
@@ -117,7 +117,7 @@ export default {
           console.log(error.message);
         });
         axios
-        .get("http://localhost:3000/api/pokemons/count")
+        .get("http://31.220.56.243:3000/api/pokemons/count")
         .then(function(response) {
             self.pokeCount = response.data
         })
