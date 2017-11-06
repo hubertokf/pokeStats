@@ -2,6 +2,7 @@
 .env
 server/config/config.json
 server/data/
+server/db_bkp/
 
 
 # Logs
