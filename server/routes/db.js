@@ -1,9 +1,9 @@
 var express = require('express');
+var path = require('path');
 var router = express.Router();
 
 router.get('/download', function (req, res) {
-    var file = '../db_bkp/bkp.sql';
-    res.download(file); // Set disposition and send it.
+    res.download(path.resolve('public/db_bkp/bkp.sql'));
 });
 
 module.exports = router;

@@ -26,5 +26,4 @@ router.get('/raids', raid.show);
 router.get('/trainers', trainer.show);
 router.get('/trainers/count', trainer.count);
 
-
 module.exports = router;
