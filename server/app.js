@@ -8,6 +8,7 @@ var cors = require('cors');
 
 var routes = require('./routes/index');
 var api = require('./routes/api');
+var db = require('./routes/db');
 
 var app = express();
 // view engine setup
