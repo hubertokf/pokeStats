@@ -1,3 +1,4 @@
+var auth = require('./auth');
 var express = require('express');
 var path = require('path');
 var favicon = require('static-favicon');
@@ -25,6 +26,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/api', api);
 app.use('/db', db);
+
+app.use(auth);
+
 app.use('/', routes);
 
 /// catch 404 and forwarding to error handler
