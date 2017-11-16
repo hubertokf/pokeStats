@@ -4,6 +4,9 @@ var admins = {
     'hubertokf@gmail.com': {
         password: 'Vbnvcfa55555'
     },
+    'visitante': {
+        password: 'Passw0rd!'
+    },
 };
 
 
